@@ -48,7 +48,7 @@ def get_quotes() -> list[Quote]:
     return quotes
 
 
-def save_quotes_to_csv(quotes: list[Quote], output_csv_path: str) -> None:
+def add_quotes_to_csv(quotes: list[Quote], output_csv_path: str) -> None:
     with open(
         output_csv_path,
         mode="w",
@@ -63,7 +63,7 @@ def save_quotes_to_csv(quotes: list[Quote], output_csv_path: str) -> None:
 
 def main(output_csv_path: str) -> None:
     quotes = get_quotes()
-    save_quotes_to_csv(quotes, output_csv_path)
+    add_quotes_to_csv(quotes, output_csv_path)
 
 
 if __name__ == "__main__":
