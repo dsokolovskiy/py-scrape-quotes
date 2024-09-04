@@ -1,10 +1,9 @@
 import requests
 import csv
-import os
 
 from bs4 import BeautifulSoup
 
-from dataclasses import dataclass, fields
+from dataclasses import dataclass
 
 
 BASE_URL = "https://quotes.toscrape.com/"
